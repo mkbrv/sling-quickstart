@@ -3,6 +3,7 @@ package com.mkbrv.blog.model;
 import org.apache.sling.api.resource.Resource;
 import org.apache.sling.models.annotations.DefaultInjectionStrategy;
 import org.apache.sling.models.annotations.Model;
+import org.apache.sling.models.annotations.Optional;
 import org.apache.sling.models.annotations.injectorspecific.Self;
 
 import javax.inject.Inject;
@@ -25,6 +26,7 @@ public class Article {
     private String title;
 
     @Inject
+    @Optional
     private String image;
 
     @Inject
@@ -61,8 +63,8 @@ public class Article {
     }
 
     public String getImage() {
-        if (image == null && this.article.getChild("image") != null) {
-            image = this.article.getChild("image").getPath() + ".jpg";
+        if (image == null && this.article.getChild("imageFile") != null) {
+            image = this.article.getChild("imageFile").getPath();
         }
         return image;
     }
