@@ -2,6 +2,7 @@
   "jcr:primaryType": "blog:homepage",
   "welcomeTitle": "Hello Medellin!",
   "welcomeText": "This is a sample of a micro-blog built using Apache Sling & Apache Jackrabbit Oak.",
+
   "hello-medellin-article": {
     "jcr:primaryType": "blog:article",
     "title": "Apache Sling & Oak: Accessing The Next Generation Java Content Repository",
@@ -17,6 +18,7 @@
       "text": "It will be definitely a pleasant meetup. No problem it be in English, that is in fact the Universal Technical and Business language. Hope to learn more about the speaker and get acquaintance of these Apache technologies. By the way, it is the first time I hear of NetCentric. What more information could you give to the avid public who will attend the event."
     }
   },
+
   "test-article": {
     "jcr:primaryType": "blog:article",
     "title": "Lorem ipsum dolor sit amet",
