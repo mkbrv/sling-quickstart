@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Medellin Java Micro-Blog</title>
+
+    <sly data-sly-include="styles.html"/>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="container">
+
+        <div data-sly-use.article="com.mkbrv.blog.model.Article">
+            <div class="row">
+                <div class="col-xs-12">
+                    ${article.title}</br>
+                    ${article.author}, ${article.date}<br/>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <img width="100px" class="img-circle pull-right" src="${article.image}">
+                    ${article.teaser}
+                    <hr/>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    ${article.text}
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<sly data-sly-include="scripts.html"/>
+</body>
+
+
+</html>
