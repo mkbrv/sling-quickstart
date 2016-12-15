@@ -1,0 +1,26 @@
+<div data-sly-use.articleWrapper="com.mkbrv.blog.model.ArticleOverview">
+
+
+    <div class="row marketing">
+        <div data-sly-list.article="${articleWrapper.articles}">
+            <div class="col-lg-6">
+
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">${article.title}</h3>
+                    </div>
+                    <div class="panel-body">
+                        ${article.teaser}
+                    </div>
+
+                    <div class="panel-footer">
+                        <a href="${article.path}.html">More...</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+</div>

@@ -1,0 +1,31 @@
+<div class="col-md-2">
+
+</div>
+<div class="col-md-8">
+
+
+    <form class="form" method="POST" action="/content/blog/*" enctype="multipart/form-data">
+
+        <h2 class="form-heading">Create new article</h2>
+
+        <label class="sr-only">Title</label>
+        <input type="text" name="title" class="form-control" placeholder="title" required
+               autofocus>
+
+        <label class="sr-only">Teaser</label>
+
+        <input type="text" name="teaser" class="form-control" placeholder="teaser" required
+               autofocus>
+        <label class="sr-only">Text</label>
+        <textarea name="text" class="form-control" placeholder="text"></textarea>
+
+        <input type="file" name="image">
+        <input type="hidden" name=":redirect" value="/content/blog.html"/>
+
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Create</button>
+    </form>
+</div>
+
+<div class="col-md-2">
+
+</div>

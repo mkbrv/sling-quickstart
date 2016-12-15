@@ -21,10 +21,12 @@
                 <version>3.0.0</version>
                 <configuration>
                     <instructions>
-                        <!-- Stop bnd complaining about unused Private-Package instructions -->
-                        <Private-Package></Private-Package>
-                        <Sling-Nodetypes>SLING-INF/nodetypes/nodetypes.cnd</Sling-Nodetypes>
-                        <Sling-Initial-Content>SLING-INF/scripts;overwrite:=true;uninstall:=true;path:=/apps/my/node,
+                        <Sling-Nodetypes>
+                            SLING-INF/nodetypes/article.cnd,
+                            SLING-INF/nodetypes/comment.cnd,
+                            SLING-INF/nodetypes/homepage.cnd
+                        </Sling-Nodetypes>
+                        <Sling-Initial-Content>SLING-INF/apps/blog;overwrite:=true;uninstall:=true;path:=/apps/blog,
                             SLING-INF/content;overwrite:=true;uninstall:=true;path:=/content
                         </Sling-Initial-Content>
                     </instructions>

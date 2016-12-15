@@ -1,0 +1,7 @@
+<blog = 'http://namespace.com/blog'>
+
+[blog:comment] > nt:unstructured, mix:created
+	- author (string) mandatory
+	- text (string)
+	- sling:resourceType (string) = "blog/components/comment" autoCreated mandatory protected
+	- sling:resourceSuperType (string) = "blog/pages/basepage" autoCreated mandatory protected

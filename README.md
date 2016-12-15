@@ -12,6 +12,7 @@ Sample for creating Apache Sling Projects.
 * Run on the project: mvn clean install -P autoInstallBundle
 
 
+
 ## Release History
 
 ## Author

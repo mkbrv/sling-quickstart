@@ -1,0 +1,31 @@
+{
+  "jcr:primaryType": "blog:homepage",
+  "welcomeTitle": "Hello Medellin!",
+  "welcomeText": "This is a sample of a micro-blog built using Apache Sling & Apache Jackrabbit Oak.",
+  "hello-medellin-article": {
+    "jcr:primaryType": "blog:article",
+    "title": "Apache Sling & Oak: Accessing The Next Generation Java Content Repository",
+    "teaser": "We invite you to a great meetup in Medellin, 15.12.2016",
+    "image": "/content/library/speaker.jpg",
+    "text": "The presentation aims to be highly practical, focusing on those aspects of enterprise java systems that deal with Web Content Management and in which the complexity of the different types of pages served, the need for performance, the multinational and multilingual rollout are key factors of success.    The talk will contain examples of how to use the Sling Out of The Box approach to obtain a REST API and how the mapping of each resource to an internal flexible representation is done. It explains how scripts are resolved as part of the request (using selectors and extensions) and what extra benefits there are to ease development; for example, how to leverage inheritance in certain content hierarchies or how to persist attributes.  ",
+    "comment_1": {
+      "author": "Daniela Ossa",
+      "text": "Hey guys! This meet up is the perfect combination! Food, beer and JAVA!"
+    },
+    "comment_2": {
+      "author": "Carlos Adolfo Ortiz Q.",
+      "text": "It will be definitely a pleasant meetup. No problem it be in English, that is in fact the Universal Technical and Business language. Hope to learn more about the speaker and get acquaintance of these Apache technologies. By the way, it is the first time I hear of NetCentric. What more information could you give to the avid public who will attend the event."
+    }
+  },
+  "test-article": {
+    "jcr:primaryType": "blog:article",
+    "title": "Lorem ipsum dolor sit amet",
+    "teaser": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "image": "/content/library/cat.jpg",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "comment_1": {
+      "author": "Test",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    }
+  }
+}

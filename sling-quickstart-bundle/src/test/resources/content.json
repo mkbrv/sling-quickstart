@@ -1,0 +1,22 @@
+{
+  "jcr:primaryType": "nt:unstructured",
+  "articles": {
+    "jcr:primaryType": "nt:unstructured",
+    "jcr:mixinTypes": [
+      "rep:AccessControllable"
+    ],
+    "sling:resourceType": "my/node"
+  },
+  "library": {
+    "jcr:primaryType": "sling:Folder",
+    "jcr:createdBy": "admin",
+    "jcr:created": "Sun Dec 11 2016 16:48:48 GMT-0500",
+    "cat": {
+      "jcr:primaryType": "sling:Folder",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Sun Dec 11 2016 16:48:48 GMT-0500",
+      "text": "asd",
+      "sling:resourceType": "my/node"
+    }
+  }
+}

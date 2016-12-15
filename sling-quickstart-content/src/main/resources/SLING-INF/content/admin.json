@@ -1,0 +1,4 @@
+{
+  "sling:resourceType": "blog/pages/admin",
+  "sling:resourceSuperType": "blog/pages/basepage"
+}

@@ -1,0 +1,59 @@
+<div data-sly-use.article="com.mkbrv.blog.model.Article">
+
+
+    <div class="row">
+
+        <div class="col-sm-12 blog-main">
+            <div class="blog-post">
+                <h2 class="blog-post-title">${article.title}</h2>
+
+                <p class="blog-post-meta">${article.date} by <a href="#">${article.author}</a></p>
+
+                <p>
+                    ${article.teaser}
+                </p>
+                <div class="pull-right">
+                    <img width="200px" class="img-circle" src="${article.image}">
+                </div>
+
+                <hr>
+
+                <p>
+                    ${article.text}
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-6">
+            <form action="${request.requestPathInfo.resourcePath}/*" method="post">
+                <label for="comment-text">Your comment</label>
+                <div class="input-group">
+                    <span class="input-group-addon" id="basic-addon1">@</span>
+                    <input type="text" name="author" class="form-control" placeholder="Name">
+                    <textarea name="text" class="form-control" id="comment-text"></textarea>
+                </div>
+                <input type="hidden" name=":redirect" value="${request.requestURI}"/>
+                <button type="submit" class="btn btn-default">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <hr/>
+
+    <span data-sly-list.comment="${article.comments}" data-sly-unwrap>
+            <div class="row">
+                 <div class="col-sm-8">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">${comment.author}, ${comment.date}:</div>
+                        <div class="panel-body">
+                            ${comment.text}
+                        </div>
+                    </div>
+                 </div>
+            </div>
+    </span>
+
+
+</div>

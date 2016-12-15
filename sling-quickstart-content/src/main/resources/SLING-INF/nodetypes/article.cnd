@@ -1,0 +1,12 @@
+<blog = 'http://namespace.com/blog'>
+
+[blog:article] > nt:unstructured, mix:created, mix:title
+    + * (blog:comment) = blog:comment
+    + * (nt:file) = nt:file
+	- title (string) mandatory
+	- text (string)
+	- teaser (string)
+	- image (string)
+	- tags (string) multiple
+	- sling:resourceType (string) = "blog/pages/article" autoCreated mandatory protected
+	- sling:resourceSuperType (string) = "blog/pages/basepage" autoCreated mandatory protected

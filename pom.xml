@@ -6,7 +6,7 @@
     <artifactId>sling-quickstart</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
-    <url>https://github.com/mkbrv</url>
+    <url>https://github.com/mkbrv/sling-quickstart</url>
     <name>Sling :: QuickStart :: Project</name>
 
     <dependencyManagement>
@@ -20,13 +20,13 @@
             <dependency>
                 <groupId>org.osgi</groupId>
                 <artifactId>org.osgi.compendium</artifactId>
-                <version>4.2.0</version>
+                <version>5.0.0</version>
                 <scope>provided</scope>
             </dependency>
             <dependency>
                 <groupId>org.osgi</groupId>
                 <artifactId>org.osgi.core</artifactId>
-                <version>4.2.0</version>
+                <version>5.0.0</version>
                 <scope>provided</scope>
             </dependency>
             <dependency>
@@ -42,9 +42,14 @@
                 <scope>provided</scope>
             </dependency>
             <dependency>
+                <groupId>org.apache.sling</groupId>
+                <artifactId>org.apache.sling.models.api</artifactId>
+                <version>1.2.2</version>
+            </dependency>
+            <dependency>
                 <groupId>org.slf4j</groupId>
                 <artifactId>slf4j-api</artifactId>
-                <version>1.7.6</version>
+                <version>1.5.2</version>
                 <scope>provided</scope>
             </dependency>
             <dependency>
