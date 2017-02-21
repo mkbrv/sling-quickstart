@@ -1,21 +1,26 @@
 package com.mkbrv.blog.api;
 
 import com.mkbrv.blog.service.ArticleService;
-import org.apache.felix.scr.annotations.Reference;
-import org.apache.felix.scr.annotations.sling.SlingServlet;
 import org.apache.sling.api.SlingHttpServletRequest;
 import org.apache.sling.api.SlingHttpServletResponse;
 import org.apache.sling.api.servlets.SlingSafeMethodsServlet;
 import org.apache.sling.commons.json.JSONException;
 import org.apache.sling.commons.json.io.JSONWriter;
+import org.osgi.service.component.annotations.Component;
+import org.osgi.service.component.annotations.Reference;
 
+import javax.servlet.Servlet;
 import javax.servlet.ServletException;
 import java.io.IOException;
 
 /**
+ * List all articles;
  * Created by mkbrv on 14/12/16.
  */
-@SlingServlet(paths = "/blog/articles", extensions = "xjson", methods = "GET")
+@Component(service = Servlet.class, property = {
+        "sling.servlet.paths=/blog/articles",
+        "sling.servlet.extensions=xjson",
+        "sling.servlet.methods=GET"})
 public class ArticlesListServlet extends SlingSafeMethodsServlet {
 
     @Reference

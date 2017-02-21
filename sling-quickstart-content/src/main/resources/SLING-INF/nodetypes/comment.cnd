@@ -1,4 +1,4 @@
-<blog = 'http://namespace.com/blog'>
+<blog = 'https://netcentric.biz/blog'>
 
 [blog:comment] > nt:unstructured, mix:created
 	- author (string) mandatory

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>sling-quickstart</artifactId>
+        <groupId>com.mkbrv.sling</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.mkbrv.sling</groupId>
+    <artifactId>sling-quickstart-server</artifactId>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.sling</groupId>
+                <artifactId>slingstart-maven-plugin</artifactId>
+                <version>1.7.0</version>
+                <executions>
+                    <execution>
+                        <id>start-container</id>
+                        <goals>
+                            <goal>start</goal>
+                        </goals>
+                    </execution>
+
+                </executions>
+                <configuration>
+
+                    <servers>
+                        <server>
+                            <port>8080</port>
+                            <debug>true</debug>
+                        </server>
+                    </servers>
+
+                    <keepLaunchpadRunning>true</keepLaunchpadRunning>
+                    <launchpadDependency>
+
+                        <groupId>org.apache.sling</groupId>
+                        <artifactId>org.apache.sling.launchpad</artifactId>
+                        <version>9-SNAPSHOT</version>
+
+                    </launchpadDependency>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+
+</project>

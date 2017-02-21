@@ -22,6 +22,7 @@ public class ArticleOverview {
 
 
     public List<Article> getArticles() {
+
         return articleService.findLatestArticles(resource.getResourceResolver());
     }
 }

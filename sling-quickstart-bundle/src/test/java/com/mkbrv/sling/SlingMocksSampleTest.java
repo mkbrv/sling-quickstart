@@ -12,7 +12,7 @@ import static org.junit.Assert.assertNotNull;
 /**
  * Created by mkbrv on 11/12/16.
  */
-public class SlingMocksSample {
+public class SlingMocksSampleTest {
 
 
     @Rule

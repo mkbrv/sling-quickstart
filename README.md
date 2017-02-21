@@ -6,9 +6,8 @@ Sample for creating Apache Sling Projects.
 * Maven 3.3.x
 
 ## Geting started
-* Download Sling Launchpad 8: http://apache.uniminuto.edu/sling/org.apache.sling.launchpad-8.jar
-* Start LaunchPad from console: java -jar org.apache.sling.launchpad-8.jar
 * Clone Repository
+* Start Sling from sling-quickstart-server: mvn install
 * Run on the project: mvn clean install -P autoInstallBundle
 * For the simplicity of the setup you can give privileges to all users. (don't do this in real projects)
     * POST localhost:8080/content.modifyAce.html
