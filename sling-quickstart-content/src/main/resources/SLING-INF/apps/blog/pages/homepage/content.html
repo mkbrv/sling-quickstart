@@ -1,9 +1,48 @@
 <!-- Main jumbotron for a primary marketing message or call to action -->
 <div class="jumbotron">
-    <div class="container">
-        <h1>${properties.welcomeTitle}</h1>
-        <p> ${properties.welcomeText}</p>
-        <p><a class="btn btn-primary btn-lg" href="http://sling.apache.org/" role="button">Read more &raquo;</a></p>
+    <div class="container" data-sly-use.page="com.mkbrv.blog.model.HomePage">
+
+        <div data-sly-test="${!page.isAuthenticated}" class="row">
+
+            <div class="col-md-6">
+
+            </div>
+
+            <div class="col-md-6">
+                <form class="form-signin" method="post" action="/content/blog.html/j_login">
+                    <h2 class="form-signin-heading">Sign in / Register</h2>
+                    <label for="inputEmail" class="sr-only">Username</label>
+                    <input name="j_username" id="inputEmail" class="form-control" placeholder="Username" required
+                           autofocus>
+                    <label for="inputPassword" class="sr-only">Password</label>
+                    <input name="j_password" type="password" id="inputPassword" class="form-control"
+                           placeholder="Password"
+                           required>
+                    <input name="j_validate" type="hidden" value="true"/>
+                    <input name="sling.auth.redirect" type="hidden" value="/content/blog.html"/>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" value="remember-me"> Remember me
+                        </label>
+                    </div>
+                    <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+                </form>
+            </div>
+        </div>
+
+
+        <div data-sly-test="${page.isAuthenticated}" class="row">
+
+            <h1>Welcome ${page.user}</h1>
+            <p> ${properties.welcomeText}</p>
+
+            <p><a class="btn btn-primary btn-lg" href="http://sling.apache.org/"
+                  role="button">Read more &raquo;</a></p>
+
+            <a class="sling-logout" href="/system/sling/logout.html">Logout</a>
+
+        </div>
+
     </div>
 </div>
 

@@ -26,8 +26,10 @@
                             SLING-INF/nodetypes/comment.cnd,
                             SLING-INF/nodetypes/homepage.cnd
                         </Sling-Nodetypes>
-                        <Sling-Initial-Content>SLING-INF/apps/blog;overwrite:=true;uninstall:=true;path:=/apps/blog,
-                            SLING-INF/content;overwrite:=true;uninstall:=true;path:=/content
+                        <Sling-Initial-Content>
+                            SLING-INF/apps/blog;overwrite:=true;uninstall:=true;path:=/apps/blog,
+                            SLING-INF/content;overwrite:=true;uninstall:=true;path:=/content,
+                            SLING-INF/etc/clientlibs/blog;overwrite:=true;uninstall:=true;path:=/etc/clientlibs/blog
                         </Sling-Initial-Content>
                     </instructions>
                 </configuration>
