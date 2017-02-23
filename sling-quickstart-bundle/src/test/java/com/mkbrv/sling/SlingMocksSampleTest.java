@@ -22,7 +22,6 @@ public class SlingMocksSampleTest {
     @Rule
     public SlingContext context = new SlingContext(ResourceResolverType.JCR_OAK);
 
-
     @Test
     public void contextIsLoaded() {
         context.load().json("/content.json", "/content/blog");
@@ -45,8 +44,6 @@ public class SlingMocksSampleTest {
             Resource article = results.next();
             assertEquals(expectedAuthor, article.getValueMap().get("jcr:createdBy").toString());
         }
-
     }
-
 
 }
