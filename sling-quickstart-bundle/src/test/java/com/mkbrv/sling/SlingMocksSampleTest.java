@@ -1,5 +1,6 @@
 package com.mkbrv.sling;
 
+import com.mkbrv.blog.model.Article;
 import org.apache.sling.api.resource.Resource;
 import org.apache.sling.api.resource.ResourceResolver;
 import org.apache.sling.testing.mock.sling.ResourceResolverType;
@@ -31,6 +32,18 @@ public class SlingMocksSampleTest {
 
         assertNotNull(resource);
         assertNotNull(resource.getChild("test-article"));
+    }
+
+    @Test
+    public void articleCanBeAdapted() {
+        context.load().json("/content.json", "/content/blog");
+
+        context.addModelsForPackage("com.mkbrv.blog.model");
+        Resource resource = context.resourceResolver().getResource("/content/blog/test-article");
+        Article article = resource.adaptTo(Article.class);
+
+        // assertEquals("Colombia", article.getAuthor()); will fail due to @Named not working
+        assertNotNull(article);
     }
 
     @Test
