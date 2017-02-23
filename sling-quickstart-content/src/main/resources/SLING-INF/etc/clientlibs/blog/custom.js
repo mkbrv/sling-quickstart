@@ -15,6 +15,10 @@
                 data: $form.serialize(),
                 success: function () {
                     window.location.reload();
+                },
+                error: function () {
+                    $form.find("button").removeClass("btn-primary");
+                    $form.find("button").addClass("btn-danger");
                 }
             });
             return false;
