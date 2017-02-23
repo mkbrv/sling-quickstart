@@ -1,0 +1,26 @@
+{
+  "compatVersion": 2,
+  "type": "lucene",
+  "async": "async",
+  "jcr:primaryType": "oak:QueryIndexDefinition",
+  "indexRules": {
+    "jcr:primaryType": "nt:unstructured",
+
+    "blog:article": {
+      "jcr:primaryType": "nt:unstructured",
+      "properties": {
+        "jcr:primaryType": "nt:unstructured",
+        "created": {
+          "ordered": true,
+          "name": "jcr:created",
+          "jcr:primaryType": "nt:unstructured"
+        },
+        "primaryType": {
+          "name": "jcr:primaryType",
+          "propertyIndex": true,
+          "jcr:primaryType": "nt:unstructured"
+        }
+      }
+    }
+  }
+}
