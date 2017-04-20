@@ -1,4 +1,4 @@
-<blog = 'https://netcentric.biz/blog'>
+<blog = 'http://softwareengineer.ro/blog'>
 
 [blog:homepage] > nt:unstructured
     + * (blog:article) = blog:article
